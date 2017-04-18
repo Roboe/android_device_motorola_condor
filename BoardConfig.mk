@@ -34,6 +34,9 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/ramdisk/fstab.qcom
 
+# Disable basic dexpreopt enabled from msm8610-common
+WITH_DEXPREOPT := false
+
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := xt1021,xt1022,xt1023,condor_umts,condor_umtsds,condor
 
